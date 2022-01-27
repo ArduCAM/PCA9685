@@ -90,15 +90,15 @@
 
 
 // Pointers that will be memory mapped when pioInit() is called
-volatile unsigned int *gpio; //pointer to base of gpio
-volatile unsigned int *spi;  //pointer to base of spi registers
-volatile unsigned int *pwm;
+extern volatile unsigned int *gpio; //pointer to base of gpio
+extern volatile unsigned int *spi;  //pointer to base of spi registers
+extern volatile unsigned int *pwm;
 
-volatile unsigned int *sys_timer;
-volatile unsigned int *arm_timer; // pointer to base of arm timer registers
+extern volatile unsigned int *sys_timer;
+extern volatile unsigned int *arm_timer; // pointer to base of arm timer registers
 
-volatile unsigned int *uart;
-volatile unsigned int *cm_pwm;
+extern volatile unsigned int *uart;
+extern volatile unsigned int *cm_pwm;
 
 /////////////////////////////////////////////////////////////////////
 // GPIO Registers
