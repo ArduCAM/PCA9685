@@ -7,6 +7,18 @@
 /////////////////////////////////////////////////////////////////////
 // TODO: return error code instead of printing (mem_fd, reg_map)
 
+// Pointers that will be memory mapped when pioInit() is called
+volatile unsigned int *gpio; //pointer to base of gpio
+volatile unsigned int *spi;  //pointer to base of spi registers
+volatile unsigned int *pwm;
+
+volatile unsigned int *sys_timer;
+volatile unsigned int *arm_timer; // pointer to base of arm timer registers
+
+volatile unsigned int *uart;
+volatile unsigned int *cm_pwm;
+
+
 int irq1, irq2, irqbasic;
 
 void pioInit() {
